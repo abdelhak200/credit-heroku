@@ -176,7 +176,7 @@ st.subheader('Prediction Probability')
 st.write(prediction_proba)
 
 # Explainability
-X = pd.read_csv('../data_models/X_train_main_features_XGBoost_weighted_class_top50.csv',
+X = pd.read_csv('X_train_main_features_XGBoost_weighted_class_top50.csv',
                        index_col=0)
 y = X.TARGET
 X = X[features_names]

@@ -176,9 +176,10 @@ st.subheader('Prediction Probability')
 st.write(prediction_proba)
 
 # Explainability
-X = pd.read_csv('X_train_main_features_XGBoost_weighted_class_top50.csv',
-                       index_col=0)
-st.write(X.columns)
+#https://stackoverflow.com/questions/55240330/how-to-read-csv-file-from-github-using-pandas
+url = 'https://media.githubusercontent.com/media/cyrbaufr/credit_heroku/master/'
+full_url = url+'X_train_main_features_XGBoost_weighted_class_top50.csv'
+X = pd.read_csv(full_url, index_col=0)
 y = X['TARGET']
 X = X[features_names]
 # explainer = shap.LinX = X[features_names]

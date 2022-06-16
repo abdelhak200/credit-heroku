@@ -178,7 +178,8 @@ st.write(prediction_proba)
 # Explainability
 X = pd.read_csv('X_train_main_features_XGBoost_weighted_class_top50.csv',
                        index_col=0)
-y = X.TARGET
+st.write(X.columns)
+y = X['TARGET']
 X = X[features_names]
 # explainer = shap.LinX = X[features_names]
 # création des train et test sets avec stratification (classes déséquilibrées)

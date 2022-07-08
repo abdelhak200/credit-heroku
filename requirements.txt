@@ -9,3 +9,4 @@ lime==0.2.0.1
 shap==0.40.0
 Pillow==9.1.1
 streamlit==1.10.0
+xgboost==1.6.1

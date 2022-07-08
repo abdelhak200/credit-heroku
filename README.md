@@ -1,5 +1,5 @@
 # credit_heroku
-# Copyright Cyril Baudrillart
+Copyright Cyril Baudrillart
 
 # Accéder à l'application
 
